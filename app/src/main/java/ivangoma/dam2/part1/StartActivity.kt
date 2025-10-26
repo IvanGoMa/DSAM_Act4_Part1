@@ -18,7 +18,7 @@ class StartActivity : AppCompatActivity(){
     private lateinit var btn: Button
     private lateinit var nomField: TextView
     private lateinit var nombreUsuari: EditText
-
+    private lateinit var btnTorna: Button
 
 
 
@@ -32,6 +32,7 @@ class StartActivity : AppCompatActivity(){
 
         nombreUsuari = findViewById(R.id.input)
         btn=findViewById(R.id.btnOk)
+        btnTorna=findViewById(R.id.btnTorna)
         nomField = findViewById(R.id.nomUsuari)
         nomField.text = nom
 
@@ -44,6 +45,11 @@ class StartActivity : AppCompatActivity(){
             intent2.putExtra("numUsuari", nombreUsuari.text.toString().toInt())
             intent2.putExtra("numCorrecte", nombreEndevinar)
             startActivity(intent2)
+        }
+
+        btnTorna.setOnClickListener {
+            intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
 
