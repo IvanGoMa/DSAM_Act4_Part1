@@ -3,4 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="placeholder">#B4B4B4</color>
+    <color name="encertat">#4CAF50</color>
+    <color name="fallat">#F44336</color>
+
 </resources>

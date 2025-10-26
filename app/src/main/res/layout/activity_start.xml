@@ -47,6 +47,15 @@
         app:layout_constraintStart_toEndOf="@id/input"
         android:text="@string/endevina"
         />
+    <Button
+        android:id="@+id/btnTorna"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@parent
+"
+        app:layout_constraintStart_toEndOf="@id/input"
+        android:text="@string/endevina"
+        />
 
 
 

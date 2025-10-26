@@ -1,7 +1,10 @@
 package ivangoma.dam2.part1
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.format.DateFormat
+import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,12 +16,21 @@ import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     private lateinit var date: TextView
+    private lateinit var btn: Button
+    private lateinit var nom: EditText
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         date = findViewById(R.id.editTextDate)
-
+        btn = findViewById(R.id.btnIniciar)
+        nom = findViewById(R.id.editText)
+        btn.setOnClickListener {
+            val nombre =  nom.text.toString()
+            navigate(nombre)
+        }
         val dateFormat: java.text.DateFormat = SimpleDateFormat(
             "dd-MM-yyyy",
             Locale.getDefault()
@@ -32,5 +44,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+    }
+
+    private fun navigate(nom:String){
+        val intent = Intent(this, StartActivity::class.java)
+        intent.putExtra("nom",nom)
+        startActivity(intent)
     }
 }

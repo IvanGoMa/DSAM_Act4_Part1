@@ -4,4 +4,13 @@
     <string name="iniciar">INICIAR</string>
     <string name="numero">Tracta d\'endevinar un nombre del 1 al 3:</string>
     <string name="endevina">Endevina</string>
+    <string name="aEndevinar">Nombre a endevinar:</string>
+    <string name="endevinat">Nombre triat per l\'usuari:</string>
+    <string name="torna">TORNA</string>
+    <string name="nomUser">Nom de l\'usuari\/a:</string>
+    <string name="encertat">Has encertat!</string>
+    <string name="fallat">Has fallat!</string>
+
+
+
 </resources>
