@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">part1</string>
+    <string name="nom">Introdueix el teu nom</string>
+    <string name="iniciar">INICIAR</string>
+    <string name="numero">Tracta d\'endevinar un nombre del 1 al 3:</string>
+    <string name="endevina">Endevina</string>
+</resources>
